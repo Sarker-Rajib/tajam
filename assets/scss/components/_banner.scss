@@ -1,0 +1,162 @@
+.banner {
+    background: url(../images/design-assets/bgk-header.png) no-repeat center center/cover;
+    padding: 225px 0 200px;
+    color: #fff;
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+        padding-bottom: 50px;
+    }
+
+    p {
+        white-space: pre-line;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5;
+        padding-bottom: 40px;
+    }
+}
+
+.story {
+    padding: 60px 0;
+
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+
+    p {
+        color: #413d4b;
+        font-size: 14px;
+        font-weight: 300;
+        padding-bottom: 40px;
+    }
+}
+
+.play {
+    padding: 200px 0;
+    background: url(../images/design-assets/bgk-middle.png) no-repeat center center/cover;
+
+}
+
+.expertise {
+    padding: 60px 0;
+
+    .top {
+        text-align: center;
+        padding-bottom: 50px;
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            padding-bottom: 15px;
+        }
+
+        p {
+            font-family: 'Playfair Display', serif;
+            color: #2f2d35;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 1.9;
+        }
+    }
+
+    .exp-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: #ebebeb;
+        gap: 1px;
+
+        @media(max-width:991px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(max-width:767px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .cc-card {
+            background: #fff;
+            padding: 30px;
+
+            h3 {
+                color: #413d4b;
+                font-size: 14px;
+                font-weight: 700;
+                padding: 20px 0 10px;
+            }
+
+            p {
+                font-weight: 300;
+                color: #333333;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.team {
+    padding: 60px 0;
+    background: url(../images/design-assets/team.png) no-repeat center center/cover;
+    color: #fff;
+
+    .top {
+        text-align: center;
+        padding-bottom: 50px;
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            padding-bottom: 15px;
+        }
+
+        p {
+            font-family: 'Playfair Display', serif;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 1.9;
+        }
+    }
+
+    .h-card {
+        border: 1px solid #ffffff48;
+
+        .image {
+            min-height: 230px;
+            background: #fff;
+        }
+
+        h4 {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            padding-top: 20px;
+        }
+
+        p {
+            font-weight: 300;
+            color: #fafafa;
+            font-size: 13px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.good-news {
+    padding: 100px 0 65px;
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        padding-bottom: 30px;
+        font-weight: 700;
+    }
+
+    input,
+    textarea {
+        border-radius: 0;
+        color: #1f1e20;
+    }
+}

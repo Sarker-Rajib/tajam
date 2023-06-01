@@ -1,0 +1,234 @@
+/*=== abstracts css start === */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+}
+
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50%;
+  }
+}
+/*===// end of base css === */
+/*=== layouts css start === */
+.header {
+  position: absolute;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .header .navbar-collapse {
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
+  .header .navbar-collapse .navbar-nav {
+    padding: 20px 30px;
+  }
+}
+.header .nav-link {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header .nav-link.active {
+  font-size: 14px;
+  color: #00e0d0;
+}
+.header .nav-link:hover {
+  color: #00e0d0;
+}
+
+.footer {
+  padding: 70px 0;
+  background: url(../images/design-assets/bgk-footer.png) no-repeat center center/cover;
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+.learn {
+  color: #00e0d0;
+  border: 1px solid #00e0d0;
+  border-radius: 0;
+  padding: 5px 10px;
+}
+.learn:hover {
+  color: #00e0d0;
+  border: 1px solid #bccac9;
+}
+
+.banner {
+  background: url(../images/design-assets/bgk-header.png) no-repeat center center/cover;
+  padding: 225px 0 200px;
+  color: #fff;
+}
+.banner h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  padding-bottom: 50px;
+}
+.banner p {
+  white-space: pre-line;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-bottom: 40px;
+}
+
+.story {
+  padding: 60px 0;
+}
+.story h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.story p {
+  color: #413d4b;
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+
+.play {
+  padding: 200px 0;
+  background: url(../images/design-assets/bgk-middle.png) no-repeat center center/cover;
+}
+
+.expertise {
+  padding: 60px 0;
+}
+.expertise .top {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.expertise .top h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+.expertise .top p {
+  font-family: "Playfair Display", serif;
+  color: #2f2d35;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.9;
+}
+.expertise .exp-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #ebebeb;
+  gap: 1px;
+}
+@media (max-width: 991px) {
+  .expertise .exp-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .expertise .exp-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.expertise .exp-card .cc-card {
+  background: #fff;
+  padding: 30px;
+}
+.expertise .exp-card .cc-card h3 {
+  color: #413d4b;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 0 10px;
+}
+.expertise .exp-card .cc-card p {
+  font-weight: 300;
+  color: #333333;
+  font-size: 14px;
+}
+
+.team {
+  padding: 60px 0;
+  background: url(../images/design-assets/team.png) no-repeat center center/cover;
+  color: #fff;
+}
+.team .top {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.team .top h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+.team .top p {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.9;
+}
+.team .h-card {
+  border: 1px solid rgba(255, 255, 255, 0.2823529412);
+}
+.team .h-card .image {
+  min-height: 230px;
+  background: #fff;
+}
+.team .h-card h4 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+.team .h-card p {
+  font-weight: 300;
+  color: #fafafa;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+
+.good-news {
+  padding: 100px 0 65px;
+}
+.good-news h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+.good-news input,
+.good-news textarea {
+  border-radius: 0;
+  color: #1f1e20;
+}
+
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */

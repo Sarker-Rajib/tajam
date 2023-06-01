@@ -1,0 +1,32 @@
+.header {
+    position: absolute;
+    width: 100%;
+
+    .navbar-collapse {
+
+        @media(max-width:991px) {
+            background: #00000033;
+            backdrop-filter: blur(20px);
+
+            .navbar-nav {
+                padding: 20px 30px;
+            }
+        }
+    }
+
+    .nav-link {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &.active {
+            font-size: 14px;
+            color: #00e0d0;
+        }
+
+        &:hover {
+            color: #00e0d0;
+        }
+    }
+}
